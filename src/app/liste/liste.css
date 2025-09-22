@@ -1,6 +1,38 @@
+.section-title {
+  color: var(--color-persian-plum);
+  font-weight: bold;
+}
+
+.film-item {
+  background-color: var(--color-prairie-sand);
+  color: var(--color-persian-plum);
+  border: 1px solid var(--color-anzac);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.film-item:hover {
+  background-color: var(--color-anzac);
+  color: var(--color-persian-plum);
+}
+
+.film-card {
+  border-top: 5px solid var(--color-persian-plum);
+  border-radius: 1rem;
+  background: var(--color-persian-plum);
+  padding-bottom: 40px;
+}
+
+.film-card .card-title {
+  color: var(--color-anzac);
+  margin-bottom: 1rem;
+}
+
 .affiche {
-  height: 400px;
-  margin: auto;
+  /* height: 400px; */
   width: 400px;
-  /* opacity: 90%; */
+  object-fit: cover;
+  margin: auto;
+  display: block;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
 }

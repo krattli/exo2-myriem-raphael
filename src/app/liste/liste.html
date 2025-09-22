@@ -1,13 +1,22 @@
-<div>
- <p>Films : </p>
- @for (film of films; track film.titre) {
-   <ul>
-     <li
-       (click)="displayFilm(film)">{{ film.titre }}</li>
-   </ul>
- }
-  @if (selectedFilm){
-    <h1>{{selectedFilm.titre}}</h1>
-    <img class="affiche" [src]="selectedFilm.affiche" alt="affiche du film" />
+<div class="container my-5">
+  <h2 class="text-center mb-4 section-title">Films</h2>
+
+  <ul class="list-group shadow-sm">
+    @for (film of films; track film.titre) {
+      <li class="list-group-item list-group-item-action film-item"
+          (click)="displayFilm(film)">
+        {{ film.titre }}
+      </li>
+    }
+  </ul>
+
+  @if (selectedFilm) {
+    <div class="card mt-5 text-center shadow-lg film-card">
+      <div class="card-body">
+        <h3 class="card-title">{{ selectedFilm.titre }}</h3>
+        <img class="affiche rounded" [src]="selectedFilm.affiche" alt="affiche du film" />
+      </div>
+    </div>
   }
 </div>
+
