@@ -1,0 +1,12 @@
+.header404 {
+  color: var(--color-persian-plum);
+}
+
+.alert-text {
+  color: var(--color-prairie-sand);
+}
+
+.return-button {
+  color: var(--color-persian-plum);
+  font-weight: 800;
+}

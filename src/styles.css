@@ -1,11 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
+:root {
+  --color-anzac: #dea450;
+  --color-prairie-sand: #9b461f;
+  --color-persian-plum: #6a1d2f;
+  --color-tom-thumb: #354c3c;
+  --color-blackcurrant: #42354c;
+}
+
 html, body {
   flex-direction: column;
   margin: 0;
 }
-
-/* app-root { */
-/*   width: 100%; */
-/*   margin:0px; */
-/*   padding: 0px; */
-/* } */

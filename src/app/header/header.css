@@ -1,13 +1,13 @@
 .header {
   height: 50px;
-  background-color: #9b461f;
+  background-color: var(--color-prairie-sand);
 
   display: flex;
 }
 
 .header-btn {
   align-items: center;
-  color: #6a1d2f;
+  color: var(--color-persian-plum);
   font-weight: 800;
   font-family: sans-serif;
 }
