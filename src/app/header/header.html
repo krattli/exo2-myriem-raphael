@@ -1,5 +1,6 @@
 <div class="header">
-  <button (click)="goToHomepage()" >Acceuil</button>
-  <button (click)="goToListe()" >Listes</button>
-  <button (click)="goToGestion()" >Gestion</button>
+  <button [routerLink]="['/']">Accueil</button>
+  <button [routerLink]="['/liste']">Listes</button>
+  <button [routerLink]="['/gestion']">Gestion</button>
 </div>
+

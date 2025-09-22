@@ -1,18 +1,12 @@
 import { Component } from '@angular/core';
-import { Router } from '@angular/router';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'Header',
-  imports: [],
+  imports: [RouterLink],
   templateUrl: './header.html',
   styleUrl: './header.css'
 })
 export class Header {
-
-  constructor(private router: Router) {}
-
-  goToListe() { this.router.navigate(['/liste']); }
-  goToHomepage() { this.router.navigate(['/homepage']); }
-  goToGestion() { this.router.navigate(['/gestion']); }
 
 }
