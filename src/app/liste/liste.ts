@@ -9,7 +9,7 @@ import { Component } from '@angular/core';
 
 export class Liste {
 
-  films: Film[] = [
+  public films: Film[] = [
     new Film('Le Petit Nicolas', 'nicolas.jpg'),
     new Film('Le Fabuleux Destin d\'Amélie Poulain', 'amelie.jpg'),
     new Film('Papy fait de la résistance', 'papy.jpg'),
@@ -17,9 +17,9 @@ export class Liste {
     new Film('Fanfan La Tulipe', 'fan.jpeg')
   ];
 
-  selectedFilm: Film | null = null;
+  public selectedFilm: Film | null = null;
 
-  displayFilm(film: Film) {
+  public displayFilm(film: Film) {
     this.selectedFilm = film;
   }
 

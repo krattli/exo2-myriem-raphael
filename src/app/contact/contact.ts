@@ -17,9 +17,9 @@ export class Contact {
     private router: Router
   ) { }
 
-  hideEmail : Boolean = false;
+  public hideEmail : Boolean = false;
 
-  onSubmit(form: NgForm) {
+  public onSubmit(form: NgForm) {
     if (form.valid) {
       const email = form.value.email;
       if (email && !email.includes('@')) {
