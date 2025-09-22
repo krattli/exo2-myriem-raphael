@@ -10,16 +10,16 @@ import { Component } from '@angular/core';
 export class Liste {
 
   films: Film[] = [
-    new Film('Inception', 'assets/images/inception.jpg'),
-    new Film('Interstellar', 'assets/images/interstellar.jpg'),
-    new Film('The Dark Knight', 'assets/images/dark-knight.jpg'),
-    new Film('Matrix', 'assets/images/matrix.jpg'),
-    new Film('Le Seigneur des Anneaux', 'assets/images/lotr.jpg')
+    new Film('Le Petit Nicolas', 'nicolas.jpg'),
+    new Film('Le Fabuleux Destin d\'Amélie Poulain', 'amelie.jpg'),
+    new Film('Papy fait de la résistance', 'papy.jpg'),
+    new Film('La Haine', 'haine.jpg'),
+    new Film('Fanfan La Tulipe', 'fan.jpeg')
   ];
 
   selectedFilm: Film | null = null;
 
-  selectFilm(film: Film) {
+  displayFilm(film: Film) {
     this.selectedFilm = film;
   }
 
@@ -27,8 +27,13 @@ export class Liste {
 
 class Film {
 
-  constructor(
-    public nom: string,
-    public affiche: string
-  ) {}
+  titre: string;
+  affiche: string;
+
+  constructor( titre: string,affiche : string) {
+    this.titre = titre;
+    this.affiche = affiche;
+  }
 }
+
+
