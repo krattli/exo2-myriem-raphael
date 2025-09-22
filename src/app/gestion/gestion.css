@@ -1,0 +1,21 @@
+.contact-data-card {
+  max-width: 600px;
+  margin: 0 auto;
+  border-radius: 1rem;
+  background: var(--color-anzac);
+}
+
+.contact-data-title {
+  color: var(--color-persian-plum);
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.contact-data-card p {
+  color: var(--color-tom-thumb);
+  margin: 0.5rem 0;
+}
+
+.contact-data-card strong {
+  color: var(--color-prairie-sand);
+}
