@@ -12,7 +12,7 @@ export const routes: Routes = [
   { path: 'gestion', component: Gestion },
   { path: 'contact', component: Contact },
   { path: 'error', component: Error404 },
-  { path: '**', component: Error404 },
+  { path: '**', component: Homepage },
 ];
 
 @NgModule({
