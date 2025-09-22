@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ContactData } from '../services/contact-data';
+import { ContactDataService } from '../services/contact-data-service';
 import { Error404 } from '../error404/error404';
 import { Router } from '@angular/router';
 
@@ -11,7 +11,7 @@ import { Router } from '@angular/router';
 })
 export class Gestion implements OnInit {
   constructor(
-    public contactData: ContactData,
+    public contactData: ContactDataService,
     private router: Router
   ) {}
 
