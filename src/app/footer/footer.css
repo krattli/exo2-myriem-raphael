@@ -1,10 +1,24 @@
 .footer {
   position: fixed;
-  left: 0;
   bottom: 0;
   width: 100%;
+  height: 60px;
+  background: var(--color-blackcurrant);
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  height: 50px;
+}
+
+.btn-footer {
+  background-color: var(--color-anzac);
+  color: var(--color-persian-plum);
+  font-weight: bold;
+  padding: 0.5rem 1.5rem;
+  transition: all 0.3s ease;
+  border: none;
+}
+
+.btn-footer:hover {
+  background-color: var(--color-prairie-sand);
+  /* transform: translateY(-2px); */
 }
