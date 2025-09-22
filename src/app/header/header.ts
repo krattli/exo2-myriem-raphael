@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
-  selector: 'app-header',
+  selector: 'Header',
   imports: [],
   templateUrl: './header.html',
   styleUrl: './header.css'

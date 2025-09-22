@@ -1,9 +1,4 @@
 .header {
   height: 50px;
-  background-color: wheat;
 }
 
-h1, h2, p {
-  margin: 0;   /* supprime les marges par défaut */
-  padding: 0;
-}
