@@ -22,3 +22,7 @@
 .btn-footer:hover {
   color: var(--color-prairie-sand);
 }
+
+.return-button:hover {
+  color: var(--color-prairie-sand);
+}
