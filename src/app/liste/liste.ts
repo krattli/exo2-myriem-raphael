@@ -9,12 +9,12 @@ import { Component } from '@angular/core';
 
 export class Liste {
 
-  public films: Film[] = [
-    new Film('Le Petit Nicolas', 'nicolas.jpg'),
-    new Film('Le Fabuleux Destin d\'Amélie Poulain', 'amelie.jpg'),
-    new Film('Papy fait de la résistance', 'papy.jpg'),
-    new Film('La Haine', 'haine.jpg'),
-    new Film('Fanfan La Tulipe', 'fan.jpeg')
+ public films: Film[] = [
+    { titre: 'Le Petit Nicolas', affiche: 'nicolas.jpg' },
+    { titre: 'Le Fabuleux Destin d\'Amélie Poulain', affiche: 'amelie.jpg' },
+    { titre: 'Papy fait de la résistance', affiche: 'papy.jpg' },
+    { titre: 'La Haine', affiche: 'haine.jpg' },
+    { titre: 'Fanfan La Tulipe', affiche: 'fan.jpeg' }
   ];
 
   public selectedFilm: Film | null = null;
@@ -24,16 +24,4 @@ export class Liste {
   }
 
 }
-
-class Film {
-
-  titre: string;
-  affiche: string;
-
-  constructor( titre: string,affiche : string) {
-    this.titre = titre;
-    this.affiche = affiche;
-  }
-}
-
 
