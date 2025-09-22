@@ -1,8 +1,4 @@
 <div class="container my-5">
-  @if (contactData.nom == null) {
-    <Error404></Error404>
-  }
-  @else {
     <div class="card shadow-lg contact-data-card">
       <div class="card-body">
         <h2 class="contact-data-title">Données du formulaire :</h2>
@@ -15,5 +11,4 @@
         <p><strong>Commentaire :</strong> {{ contactData.commentaire }}</p>
       </div>
     </div>
-  }
 </div>
