@@ -1,28 +1,33 @@
-/* Box centrée */
+input, textarea {
+  border: 0px;
+  background-color: var(--color-anzac);
+  color: var(--color-tom-thumb);
+}
+
+input:focus, textarea:focus {
+  border: 0px;
+  background-color: var(--color-anzac);
+}
 .contact-card {
   max-width: 500px;
   width: 100%;
   border-radius: 1rem;
-  border-top: 6px solid var(--color-anzac);
   background-color: var(--color-prairie-sand);
   margin: 2rem;
 }
 
-/* Titre */
 .contact-title {
-  color: var(--color-tom-thumb);
+  color: var(--color-persian-plum);
   font-weight: bold;
 }
 
 .form-control:focus {
   border-color: var(--color-prairie-sand);
-  box-shadow: 0 0 0 0.2rem rgba(155, 70, 31, 0.25);
 }
 
-/* Bouton */
 .btn-custom {
   background-color: var(--color-persian-plum);
-  color: #fff;
+  color: var(--color-anzac);
   border-radius: 25px;
   transition: all 0.3s ease;
 }
