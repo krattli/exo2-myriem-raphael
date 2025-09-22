@@ -5,7 +5,7 @@
 
 .film-item {
   background-color: var(--color-prairie-sand);
-  color: var(--color-persian-plum);
+  color: var(--color-anzac);
   border: 1px solid var(--color-anzac);
   cursor: pointer;
   transition: all 0.3s ease;
