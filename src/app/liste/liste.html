@@ -2,7 +2,8 @@
  <p>Films : </p>
  @for (film of films; track film.titre) {
    <ul>
-     <li (click)="displayFilm(film)">{{ film.titre }}</li>
+     <li
+       (click)="displayFilm(film)">{{ film.titre }}</li>
    </ul>
  }
   @if (selectedFilm){

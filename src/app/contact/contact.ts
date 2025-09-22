@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { NgForm, FormsModule } from '@angular/forms';
-import { ContactData } from '../contact-data';
+import { ContactData } from '../services/contact-data';
 import { Router } from '@angular/router';
 
 @Component({
@@ -13,16 +13,17 @@ import { Router } from '@angular/router';
 export class Contact {
 
   constructor(
-    private contact_service: ContactData,
+    private contactService: ContactData,
     private router: Router
   ) { }
 
   onSubmit(form: NgForm) {
     if (form.valid) {
-      this.contact_service.nom = form.value.nom;
-      this.contact_service.prenom = form.value.prenom;
-      this.contact_service.age = form.value.age;
-      this.contact_service.commentaire = form.value.commentaire;
+      this.contactService.nom = form.value.nom;
+      this.contactService.prenom = form.value.prenom;
+      this.contactService.age = form.value.age;
+      this.contactService.email = form.value.email;
+      this.contactService.commentaire = form.value.commentaire;
 
       this.router.navigate(['/']);
     }

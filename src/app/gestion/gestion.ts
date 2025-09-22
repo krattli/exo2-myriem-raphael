@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { ContactData } from '../contact-data';
+import { ContactData } from '../services/contact-data';
 
 @Component({
   selector: 'Gestion',
