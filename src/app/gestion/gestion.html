@@ -4,9 +4,12 @@
   }
   @else {
     <h2>Données du formulaire : </h2>
-    <p>Nom : {{ contactData.nom }}</p>
     <p>Prenom : {{ contactData.prenom }}</p>
+    <p>Nom : {{ contactData.nom }}</p>
     <p>Age : {{ contactData.age }}</p>
+    @if (contactData.email != null) {
+      <p>Email : {{ contactData.email }}</p>
+    }
     <p>Commentaire : {{ contactData.commentaire }}</p>
   }
 </div>
