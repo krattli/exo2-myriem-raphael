@@ -2,4 +2,13 @@
   height: 400px;
   margin: auto;
   width: 400px;
+  /* opacity: 90%; */
+}
+
+.homepage_container {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: blue;
 }
