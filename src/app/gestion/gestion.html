@@ -4,7 +4,9 @@
         <h2 class="contact-data-title">Données du formulaire :</h2>
         <p><strong>Prénom :</strong> {{ contactData.prenom }}</p>
         <p><strong>Nom :</strong> {{ contactData.nom }}</p>
-        <p><strong>Âge :</strong> {{ contactData.age }}</p>
+        @if (contactData.age != null) {
+          <p><strong>Âge :</strong> {{ contactData.age }}</p>
+        }
         @if (contactData.email != null) {
           <p><strong>Email :</strong> {{ contactData.email }}</p>
         }
