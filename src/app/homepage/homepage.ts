@@ -3,9 +3,7 @@ import {NgOptimizedImage} from '@angular/common';
 
 @Component({
   selector: 'Homepage',
-  imports: [
-    NgOptimizedImage
-  ],
+  imports: [],
   templateUrl: './homepage.html',
   styleUrl: './homepage.css'
 })
