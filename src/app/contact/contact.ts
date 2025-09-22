@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { NgForm, FormsModule } from '@angular/forms';
-import { ContactData } from '../services/contact-data';
+import { ContactDataService } from '../services/contact-data-service';
 import { Router } from '@angular/router';
 
 @Component({
@@ -13,7 +13,7 @@ import { Router } from '@angular/router';
 export class Contact {
 
   constructor(
-    private contactService: ContactData,
+    private contactService: ContactDataService,
     private router: Router
   ) { }
 

@@ -3,7 +3,7 @@ import { Injectable } from '@angular/core';
 @Injectable({
   providedIn: 'root'
 })
-export class ContactData {
+export class ContactDataService {
 
   public nom: string | null = null;
   public prenom: string = "";
