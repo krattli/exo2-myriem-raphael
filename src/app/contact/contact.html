@@ -1,13 +1,17 @@
 <form class ="form" #contactForm="ngForm" (ngSubmit)="onSubmit(contactForm)">
-
   <input type="text" name="prenom" ngModel required placeholder="Prenom">
   <input type="text" name="nom" ngModel required placeholder="Nom">
-  <input type="number" name="age" ngModel required placeholder="Age">
-  <input type="checkbox">
-  <input type="text" name="email" ngModel required placeholder="Email">
+  <input type="number" min="1" name="age" ngModel required placeholder="Age">
+  <input type="checkbox" name="email-required" [(ngModel)]="hideEmail">
+  <label for ="email-required"> Email ?</label>
+  @if (!hideEmail){
+    <input type="text" name="email" ngModel required placeholder="Email">
+  }
   <input type="text" name="commentaire" ngModel placeholder="Commentaire">
 
   <button type="submit" [disabled]="!contactForm.valid">
     Envoyer
   </button>
 </form>
+
+
