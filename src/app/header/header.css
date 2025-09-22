@@ -11,3 +11,7 @@
   font-weight: 800;
   font-family: sans-serif;
 }
+
+.header-btn:hover {
+  color: var(--color-anzac);
+}

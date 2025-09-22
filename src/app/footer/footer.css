@@ -11,8 +11,8 @@
 }
 
 .btn-footer {
-  background-color: var(--color-anzac);
-  color: var(--color-persian-plum);
+  /* background-color: var(--color-anzac); */
+  color: var(--color-anzac);
   font-weight: bold;
   padding: 0.5rem 1.5rem;
   transition: all 0.3s ease;
@@ -20,6 +20,5 @@
 }
 
 .btn-footer:hover {
-  background-color: var(--color-prairie-sand);
-  /* transform: translateY(-2px); */
+  color: var(--color-prairie-sand);
 }
