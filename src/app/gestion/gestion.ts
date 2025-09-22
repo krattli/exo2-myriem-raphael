@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ContactData } from '../contact-data';
 
 @Component({
   selector: 'Gestion',
@@ -7,5 +8,5 @@ import { Component } from '@angular/core';
   styleUrl: './gestion.css'
 })
 export class Gestion {
-
+  constructor(public contact_data: ContactData) {}
 }

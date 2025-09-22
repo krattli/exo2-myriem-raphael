@@ -1,1 +1,12 @@
-<p>gestion works!</p>
+<div>
+  @if (contact_data.nom == null) {
+    <p>Error 404</p>
+  }
+  @else {
+    <h2>Données du formulaire : </h2>
+    <p>Nom : {{ contact_data.nom }}</p>
+    <p>Prenom : {{ contact_data.prenom }}</p>
+    <p>Age : {{ contact_data.age }}</p>
+    <p>Commentaire : {{ contact_data.commentaire }}</p>
+  }
+</div>
